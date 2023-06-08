@@ -1,0 +1,17 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+@if (this.User.IsInRole("Admin"))
+{
+    <main>
+    </main>
+}
+else
+{
+    <main>
+        <p>Welcome to Home!</p>
+    </main>
+}

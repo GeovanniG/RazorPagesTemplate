@@ -1,0 +1,34 @@
+﻿<!DOCTYPE html>
+<html lang="en" data-theme='dark'>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PowerBuilders Digest - @ViewData["Title"]</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/index.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/RazorPagesTemplate.styles.css" asp-append-version="true" />
+</head>
+<body>
+    <div class="container">
+        <main role="main" class="col pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer class="text-muted">
+        <div class="container">
+            <ul>
+                <li><a href="/privacy">Privacy</a></li>
+            </ul>
+            <p>&copy; 2023 - Home</p>
+        </div>
+    </footer>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/layout.js" asp-append-version="true"></script>
+
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
