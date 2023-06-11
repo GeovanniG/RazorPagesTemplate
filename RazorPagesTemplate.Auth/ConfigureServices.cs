@@ -1,7 +1,6 @@
 ﻿using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using RazorPagesTemplate.Auth.Infrastructure;
-using System.Reflection;
 
 namespace RazorPagesTemplate.Auth;
 
@@ -9,10 +8,10 @@ public static class ConfigureServices
 {
     public static IServiceCollection AddAuthServices(this IServiceCollection services, IConfiguration configuration)
     {
-        var assembly = Assembly.GetExecutingAssembly();
-        _ = services.AddControllersWithViews()
-            .AddApplicationPart(assembly)
-            .AddRazorRuntimeCompilation();
+        //var assembly = Assembly.GetExecutingAssembly();
+        //_ = services.AddControllersWithViews()
+        //    .AddApplicationPart(assembly)
+        //    .AddRazorRuntimeCompilation();
 
         _ = services
             .AddRazorPages();

@@ -9,6 +9,8 @@ internal sealed class Program
     {
         var builder = WebApplication.CreateBuilder(args);
 
+        _ = builder.WebHost.UseStaticWebAssets();
+
         // Add services to the container.
         _ = builder.Services.AddRazorPages();
 
@@ -36,6 +38,10 @@ internal sealed class Program
                     Directory.GetParent(Directory.GetCurrentDirectory())?.FullName ?? string.Empty,
                     "RazorPagesTemplate.Auth",
                     "wwwroot"))
+        });
+        _ = app.UseStaticFiles(new StaticFileOptions()
+        {
+            RequestPath = "/Identity"
         });
 
         _ = app.UseRouting();

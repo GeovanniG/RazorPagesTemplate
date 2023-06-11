@@ -8,118 +8,6 @@
     line-height: 160%;
 }
 
-.browser {
-    opacity: 0.9;
-    padding: 0px 10px;
-    border-radius: 7px 7px 0px 0px;
-    background-image: initial;
-    background-color: rgb(66, 72, 75);
-}
-
-    .browser.yosemite {
-        margin-top: 2rem;
-        background-image: linear-gradient(rgb(29, 32, 33) 0%, rgb(45, 49, 51) 100%);
-        background-color: initial;
-        border-width: 1px;
-        border-style: solid;
-        border-image: initial;
-        border-bottom: 1px solid rgb(180, 180, 180);
-        border-color: rgb(59, 64, 66) rgb(59, 64, 66) rgb(69, 75, 78);
-    }
-
-    .browser .dot {
-        display: inline-block;
-        width: 10px;
-        height: 10px;
-        background: rgb(249, 249, 249);
-        border-radius: 50%;
-        margin: 0px 4px 0px 0px;
-    }
-
-        .browser .dot.red {
-            background-image: initial;
-            background-color: rgb(152, 8, 0);
-            border-color: rgb(145, 27, 23);
-            background: rgb(255, 96, 87);
-            border-width: 1px;
-            border-style: solid;
-            border-image: initial;
-        }
-
-        .browser .dot.amber {
-            background-image: initial;
-            background-color: rgb(132, 91, 0);
-            border-color: rgb(155, 111, 23);
-            background: rgb(255, 189, 46);
-            border-width: 1px;
-            border-style: solid;
-            border-image: initial;
-        }
-
-        .browser .dot.green {
-            background-image: initial;
-            background-color: rgb(31, 161, 50);
-            border-color: rgb(28, 166, 41);
-            background: rgb(39, 201, 63);
-            border-width: 1px;
-            border-style: solid;
-            border-image: initial;
-        }
-
-.browser-content {
-    border-right-color: rgb(59, 64, 66);
-    border-bottom-color: rgb(59, 64, 66);
-    border-left-color: rgb(59, 64, 66);
-    border-top-color: initial;
-    font-size: 0.85em;
-    height: 560px;
-    border-width: 0px 1px 1px;
-    border-style: solid solid solid;
-    border-image: initial;
-    border-top: 0px;
-    padding: 10px 1em;
-    overflow: auto;
-}
-
-.subscribe-form {
-    padding-top: 0.5em;
-}
-
-    .subscribe-form input[type="email"] {
-        width: 70%;
-        display: inline-block;
-        margin: 0;
-        font-size: 0.8em;
-    }
-
-    .subscribe-form input[type="submit"] {
-        width: 28.5%;
-        margin: 0 0 0 0.25em;
-        display: inline-block;
-        background: #0000ee;
-        border: 2px solid #0000ee;
-        color: var(--btn-color);
-        text-decoration-color: initial;
-        background-image: initial;
-        background-color: rgb(0, 0, 190);
-        border-color: rgb(0, 0, 184);
-    }
-
-@media screen and (max-width: 720px) {
-    .subscribe-form input[type="email"] {
-        width: 100%;
-        box-sizing: border-box;
-        display: block;
-    }
-
-    .subscribe-form input[type="submit"] {
-        width: 100%;
-        box-sizing: border-box;
-        display: block;
-        margin: 1em 0;
-    }
-}
-
 .col {
     display: flex;
 }
@@ -143,14 +31,6 @@
             box-sizing: border-box;
             padding-right: 0;
         }
-}
-
-.digest-example {
-    width: 100%;
-    position: -webkit-sticky; /* for Safari */
-    position: sticky;
-    top: 0;
-    align-self: flex-start;
 }
 
 footer {
