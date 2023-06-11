@@ -4,6 +4,7 @@
     <TargetFramework>net7.0</TargetFramework>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
+	<EnforceCodeStyleInBuild>true</EnforceCodeStyleInBuild>
     <UserSecretsId>aspnet-RazorPagesTemplate.Auth-66db9733-7197-46ad-9325-37ffd12b9c3f</UserSecretsId>
     <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
     <OutputType>Library</OutputType>

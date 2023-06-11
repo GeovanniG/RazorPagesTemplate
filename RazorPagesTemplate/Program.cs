@@ -32,7 +32,10 @@ internal sealed class Program
         _ = app.UseStaticFiles(new StaticFileOptions()
         {
             FileProvider = new PhysicalFileProvider(
-                Path.Combine(Directory.GetParent(Directory.GetCurrentDirectory()).FullName, "RazorPagesTemplate.Auth", "wwwroot"))
+                Path.Combine(
+                    Directory.GetParent(Directory.GetCurrentDirectory())?.FullName ?? string.Empty,
+                    "RazorPagesTemplate.Auth",
+                    "wwwroot"))
         });
 
         _ = app.UseRouting();
