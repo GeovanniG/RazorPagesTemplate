@@ -1,0 +1,106 @@
+html {
+    --color-text: rgb(24, 26, 27);
+    --color-light: #DDE6EDD;
+    --color-richer: #9DB2BF;
+    --color-dark: #526D82;
+    --color-darkest: #27374D;
+
+    --text-color-highlight: hsl(25, 70%, 45%);
+    --text-color-links: rgb(61, 132, 255);
+    --text-color-headers: rgb(61, 132, 255);
+    --btn-color: rgb(232, 230, 227);
+    --scrollbar-color: #8cabd9;
+    --scrollbar-corner-color: rgb(61, 132, 255);
+    --scrollbar-thumb-color: hsl(25, 70%, 45%);
+}
+
+html {
+    font-size: 14px;
+}
+
+a, .nav-link {
+    color: var(--text-color-links);
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    background-color: var(--color-light);
+    color: var(--color-text);
+    font-family: -apple-system, BlinkMacSystemFont, "avenir next", avenir, "segoe ui", "helvetica neue", helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
+    font-size: 1.25rem;
+    line-height: 145%;
+    padding: 60px 60px 20px 60px;
+}
+
+h1 {
+    font-size: 1.5em;
+    margin-top: 0.75em;
+    line-height: 125%;
+    margin: 1.25em 0px 1em;
+}
+
+p {
+    margin: 1em 0px;
+}
+
+em {
+    background-image: initial;
+    background-color: var(--text-color-highlight); 
+    font-style: normal;
+}
+
+blockquote {
+    font-style: italic;
+    margin: 1rem 2.5rem;
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+    box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+::-webkit-scrollbar {
+    background-color: var(--scrollbar-color);
+}
+
+::-webkit-scrollbar-corner {
+    background-color: var(--scrollbar-corner-color);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--scrollbar-thumb-color);
+}
+
+@media screen and (max-width: 720px) {
+    body {
+        padding: 20px;
+    }
+}
+
+input[type="email"] {
+    padding: 1em;
+    border: 1px solid rgba(0,0,0,0.12);
+}
+
+textarea:focus, input:focus {
+    outline: none;
+}
+
+input[type="submit"], .btn {
+    font-size: 0.9em;
+    border-radius: 5px;
+    margin: 0.25em 0 1em 0;
+    padding: 0.7em;
+    min-width: 7em;
+    text-decoration: none;
+    cursor: pointer;
+}

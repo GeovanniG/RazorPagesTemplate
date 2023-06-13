@@ -1,0 +1,56 @@
+﻿.header {
+    color: var(--text-color-headers);
+    font-weight: bold;
+}
+
+.intro {
+    font-size: 1.2em;
+    line-height: 160%;
+}
+
+.col {
+    display: flex;
+}
+
+    .col section {
+        max-width: 30.5em;
+        padding-right: 2em;
+        flex-shrink: 1;
+    }
+
+        .col section:last-child {
+            padding-right: 0;
+        }
+
+@media screen and (max-width: 1225px) {
+    .col {
+        display: block;
+    }
+
+        .col section {
+            box-sizing: border-box;
+            padding-right: 0;
+        }
+}
+
+footer {
+    font-size: 1.05rem;
+}
+
+    footer a, footer a:visited {
+        color: rgb(168, 160, 149);
+    }
+
+    footer ul {
+        padding-left: 0px;
+    }
+
+        footer ul li {
+            list-style-image: initial;
+            display: inline;
+            list-style: none;
+        }
+
+            footer ul li:not(:last-child)::after {
+                content: " · ";
+            }
